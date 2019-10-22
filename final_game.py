@@ -131,7 +131,8 @@ class my_game(arcade.Window):
     def on_mouse_press(self, x, y, button, modifiers):
 
         if button == arcade.MOUSE_BUTTON_LEFT:
-            self.bullet_sprite = arcade.Sprite("images\Bullet.png",0.1) 
+            super().__init__("images\Bullet.png",0.1) 
+            self.bullet_sprite = arcade.SpriteList()
             self.bullet_sprite.center_y = y
             self.bullet_sprite.center_x = x
             self.bullet_list.append(self.bullet_sprite)

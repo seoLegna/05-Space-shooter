@@ -1,6 +1,4 @@
-import arcade 
-import random
-import time
+import arcade, random, time
 
 SCREEN_WIDTH = 900
 SCREEN_HEIGHT = 900
@@ -36,32 +34,37 @@ class my_game(arcade.Window):
 
         self.score = 0
 
-        self.ship_sprite = arcade.Sprite("images\ship.png",0.5)
+        super().__init__("images/ship.png", 0.5)
+        self.ship_sprite = arcade.SpriteList()
         self.ship_sprite.center_x = 300
         self.ship_sprite.center_y = 300
         self.ship_list.append(self.ship_sprite)
 
-        self.alien_sprite = arcade.Sprite("images\Alien.png",0.2)
+        super().__init_("images\Alien.png",0.2)
+        self.alien_sprite = arcade.SpriteList()
         self.alien_sprite.center_x = 500
         self.alien_sprite.center_y = 700
         self.alien_list.append(self.alien_sprite)
         self.alien_sprite_health = 10
 
-        self.alien2_sprite = arcade.Sprite("images\Alien2.png",0.2)
+        super().__init__("images\Alien2.png",0.2)
+        self.alien2_sprite = arcade.SpriteList()
         self.alien2_sprite.center_x = 100
         self.alien2_sprite.center_y = 700
         self.alien_list.append(self.alien2_sprite)
         self.alien2_sprite_health = 15
 
-        self.alien3_sprite = arcade.Sprite("images\Alien3.png",0.2)
+        super().__init__("images\Alien3.png",0.2)
+        self.alien3_sprite = arcade.SpriteList()
         self.alien3_sprite.center_x = 800
         self.alien3_sprite.center_y = 700
         self.alien_list.append(self.alien3_sprite)
         self.alien3_sprite_health = 20
-        self.alien_velocity_y = -13
+        self.alien_velocity_y = - 13
         self.alien_velocity_x = 13
 
-        self.bullet_sprite = arcade.Sprite("images\Bullet.png",0.1)
+        super().__init__("images\Bullet.png",0.1)
+        self.bullet_sprite = arcade.SpriteList()
         self.bullet_sprite.center_x = self.ship_sprite.center_x 
         self.bullet_sprite.center_y = self.ship_sprite.center_y
         self.bullet_list.append(self.bullet_sprite)
@@ -128,7 +131,8 @@ class my_game(arcade.Window):
     def on_mouse_press(self, x, y, button, modifiers):
 
         if button == arcade.MOUSE_BUTTON_LEFT:
-            self.bullet_sprite = arcade.Sprite("images\Bullet.png",0.1) 
+            super().__init__("images\Bullet.png",0.1) 
+            self.bullet_sprite = arcade.SpriteList()
             self.bullet_sprite.center_y = y
             self.bullet_sprite.center_x = x
             self.bullet_list.append(self.bullet_sprite)

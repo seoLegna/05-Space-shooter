@@ -1,0 +1,37 @@
+Name: Maddie McMullen
+Date: 10/22
+Project: Space shooter peer review
+Peer's repository: 
+https://github.com/seoLegna/05-Space-Shooter.git
+
+
+What is something you learned by reviewing your peer's project?
+I still have a lot to learn because I could not figure out how to fix the type error. Additionally, I realized how important organization is to understanding the code and being able to fix things. 
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+I was unable to run the game so I couldn't really get a feel for their interpretation of the product, but I liked that their code was simplified in the sense where I didn't have to hunt to know what was going on which is something I need to improve on.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+Try using classes to seperate the different aliens. This way you can put all of the attributes in one area and make the setup cleaner. 
+ 
+
+What could have been clearer or better commented?
+I don't have any comments for this part. 
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+Nothing in the code itself was confusing. The errors were, however.
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+Game play instructions or objectives would be a good idea. 
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+I really liked the sprites you chose and the code was clear enough to me. I'm not sure why I got such odd errors when I tried to run it. It wasn't recognizing some integer and it didn't want to initialize your sprites. BUT it looked like it would've been fun :)
